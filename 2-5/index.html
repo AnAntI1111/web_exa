@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="Navbar">
+            <ul>
+                <div class="Logo">
+                    <li><a href="#">LOGO</a></li>
+                </div>
+                <div class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">About</a></li>    
+                </div>
+                <div class="cart">
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </div>
+            </ul>
+        </div>
+        <div class="product">
+            <div class="grid-container">
+                <div class="item1">
+                    <div class="grid-container2">
+                        <div class="item1-1">
+                            <i class="fa-solid fa-image" aria-hidden="true"></i>
+                        </div>
+                        <div class="item1-2">
+                            <div class="pic-s">
+                                <i class="fa-solid fa-image" aria-hidden="true"></i>
+                            </div>
+                            <div class="pic-s">
+                                <i class="fa-solid fa-image" aria-hidden="true"></i>
+                            </div>
+                            <div class="pic-s">
+                                <i class="fa-solid fa-image" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item2">
+                    <p>CLOTHES</p>
+                    <h1>Lorem Ipsum</h1>
+                    <p>Available : 10 in stock</p>
+                    <h1>$20</h1>
+                    <br />
+                    <div class="actions">
+                        <div class="counter">
+                            <button class="minus" id="decrement-btn" type="button">-</button>
+                            <div id="counter-value">1</div>
+                            <button class="plus" id="increment-btn" type="button">+</button>
+                        </div>
+                    
+                        <div class="add">
+                            <button type="button">Add in cart</button>
+                        </div>
+                    </div>
+
+                    <br />
+                    <br />
+                    
+                    <div class="star-rating">
+                        <i class="fa-solid fa-star yellow"></i>
+                        <i class="fa-solid fa-star yellow"></i>
+                        <i class="fa-solid fa-star yellow"></i>
+                        <i class="fa-solid fa-star yellow"></i>
+                        <i class="fa-solid fa-star gray"></i>
+                        <span>5 Reviews</span>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="grid-container3">
+                <div class="L3">
+                    <div class="tab">
+                        <button class="tablinks active" onclick="openDetail(event, 'Desc')">Description </button>
+                        <button class="tablinks" onclick="openDetail(event, 'Reviews')">Reviews (5)</button>
+                    </div>
+
+                    <div id="Desc" class="tabcontent" style="display: block;">
+                        <p style="font-weight: 600;">Description</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies ac massa non blandit. In hac habitasse platea dictumst. Proin ornare suscipit justo, et posuere magna dictum id. Nunc molestie nisi nec ex consectetur consequat. Quisque sit amet nulla quis diam tempus lobortis placerat quis nisl. Aliquam erat volutpat. Duis sagittis vitae tellus non placerat. Fusce ultricies, tellus vitae tincidunt tempor, ante nunc euismod velit, ac tempus leo ante eu enim. Aliquam quis sodales eros. Integer dapibus molestie risus, vitae finibus sapien. Sed tempus, neque nec varius fermentum, quam eros euismod augue, vestibulum tristique eros ipsum porta arcu.</p>
+                        <br />
+
+                        <ul>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                        </ul>  
+
+                      </div>
+                      
+                      <div id="Reviews" class="tabcontent" style="display: none;">
+                        <p style="font-weight: 600;">Reviews (5)</p>
+                        <div class="comment-box">
+                            <div class="profile">
+                                <i class="fa-solid fa-circle-user" style="font-size: 35px;"></i>
+                                <p>User1234</p>
+                            </div>
+                            <div class="star-rating" style="margin-bottom: 10px;">
+                                <span>Product quality :</span>
+                                <i class="fa-solid fa-star gray"></i>
+                                <i class="fa-solid fa-star gray"></i>
+                                <i class="fa-solid fa-star gray"></i>
+                                <i class="fa-solid fa-star gray"></i>
+                                <i class="fa-solid fa-star gray"></i>
+                            </div>
+                            <form>
+                                <textarea placeholder="Share more thoughts on the product to help other buyers."></textarea>
+                            </form>
+                            <div class="button-set">
+                                <button class="submit" value="Submit">Submit</button>
+                                <button class="cancel" value="Cancel">Cancel</button>
+                            </div>
+                        </div>
+                        <div class="comment-box">
+                            <div class="profile">
+                                <i class="fa-solid fa-circle-user" style="font-size: 35px;"></i>
+                                <p>User1234</p>
+                            </div>
+                            <div class="star-rating" style="margin-bottom: 10px;">
+                                <i class="fa-solid fa-star yellow"></i>
+                                <i class="fa-solid fa-star yellow"></i>
+                                <i class="fa-solid fa-star yellow"></i>
+                                <i class="fa-solid fa-star yellow"></i>
+                                <i class="fa-solid fa-star gray"></i>
+                            </div>   
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies ac massa non blandit. In hac habitasse platea dictumst. Proin ornare suscipit justo, et posuere magna dictum id. </p> 
+                        </div>
+                        <div class="comment-box">
+                            <div class="profile">
+                                <i class="fa-solid fa-circle-user" style="font-size: 35px;"></i>
+                                <p>User1234</p>
+                            </div>
+                            <div class="star-rating" style="margin-bottom: 10px;">
+                                <i class="fa-solid fa-star yellow"></i>
+                                <i class="fa-solid fa-star yellow"></i>
+                                <i class="fa-solid fa-star yellow"></i>
+                                <i class="fa-solid fa-star yellow"></i>
+                                <i class="fa-solid fa-star gray"></i>
+                            </div>   
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies ac massa non blandit. In hac habitasse platea dictumst. Proin ornare suscipit justo, et posuere magna dictum id. </p> 
+                        </div>
+                        <div class="comment-box">
+                            <div class="profile">
+                                <i class="fa-solid fa-circle-user" style="font-size: 35px;"></i>
+                                <p>User1234</p>
+                            </div>
+                            <div class="star-rating" style="margin-bottom: 10px;">
+                                <i class="fa-solid fa-star yellow"></i>
+                                <i class="fa-solid fa-star yellow"></i>
+                                <i class="fa-solid fa-star yellow"></i>
+                                <i class="fa-solid fa-star yellow"></i>
+                                <i class="fa-solid fa-star gray"></i>
+                            </div>   
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies ac massa non blandit. In hac habitasse platea dictumst. Proin ornare suscipit justo, et posuere magna dictum id. </p> 
+                        </div>
+                        <div class="comment-box">
+                            <div class="profile">
+                                <i class="fa-solid fa-circle-user" style="font-size: 35px;"></i>
+                                <p>User1234</p>
+                            </div>
+                            <div class="star-rating" style="margin-bottom: 10px;">
+                                <i class="fa-solid fa-star yellow"></i>
+                                <i class="fa-solid fa-star yellow"></i>
+                                <i class="fa-solid fa-star yellow"></i>
+                                <i class="fa-solid fa-star yellow"></i>
+                                <i class="fa-solid fa-star gray"></i>
+                            </div>   
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies ac massa non blandit. In hac habitasse platea dictumst. Proin ornare suscipit justo, et posuere magna dictum id. </p> 
+                        </div>
+                        <div class="comment-box">
+                            <div class="profile">
+                                <i class="fa-solid fa-circle-user" style="font-size: 35px;"></i>
+                                <p>User1234</p>
+                            </div>
+                            <div class="star-rating" style="margin-bottom: 10px;">
+                                <i class="fa-solid fa-star yellow"></i>
+                                <i class="fa-solid fa-star yellow"></i>
+                                <i class="fa-solid fa-star yellow"></i>
+                                <i class="fa-solid fa-star yellow"></i>
+                                <i class="fa-solid fa-star gray"></i>
+                            </div>   
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies ac massa non blandit. In hac habitasse platea dictumst. Proin ornare suscipit justo, et posuere magna dictum id. </p> 
+                        </div>
+
+                    </div>
+                </div>
+                <div class="R3">
+                    <h3>Additional Information</h3>
+                    <p style="font-weight: 600;">Dimentions</p>
+                    <p>30 x 30 x 1 cm</p>
+                    <p style="font-weight: 600;">Weight</p>
+                    <p>0.35kg</p>
+                </div>
+            </div>
+            <div class="more">
+                <div class="head">
+                    <h1>You may also like</h1>
+                    <a href="#">More ></a>                
+                </div>
+                <div class="row">
+                    <div class="column">
+                      <div class="card">
+                        <div class="pic">
+                            <i class="fa-solid fa-image" aria-hidden="true"></i>
+                        </div>
+                        <div class="n-p">
+                            <p style="text-align: left; font-weight: bold;">Name</p>
+                            <p style="text-align: right;">$10</p>                        
+                        </div>
+                        <div class="star-rating">
+                            <i class="fa-solid fa-star yellow"></i>
+                            <i class="fa-solid fa-star yellow"></i>
+                            <i class="fa-solid fa-star yellow"></i>
+                            <i class="fa-solid fa-star yellow"></i>
+                            <i class="fa-solid fa-star gray"></i>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="column">
+                        <div class="card">
+                          <div class="pic">
+                              <i class="fa-solid fa-image" aria-hidden="true"></i>
+                          </div>
+                          <div class="n-p">
+                              <p style="text-align: left; font-weight: bold;">Name</p>
+                              <p style="text-align: right;">$10</p>                        
+                          </div>
+                          <div class="star-rating">
+                              <i class="fa-solid fa-star yellow"></i>
+                              <i class="fa-solid fa-star yellow"></i>
+                              <i class="fa-solid fa-star yellow"></i>
+                              <i class="fa-solid fa-star yellow"></i>
+                              <i class="fa-solid fa-star gray"></i>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="column">
+                        <div class="card">
+                          <div class="pic">
+                              <i class="fa-solid fa-image" aria-hidden="true"></i>
+                          </div>
+                          <div class="n-p">
+                              <p style="text-align: left; font-weight: bold;">Name</p>
+                              <p style="text-align: right;">$10</p>                        
+                          </div>
+                          <div class="star-rating">
+                              <i class="fa-solid fa-star yellow"></i>
+                              <i class="fa-solid fa-star yellow"></i>
+                              <i class="fa-solid fa-star yellow"></i>
+                              <i class="fa-solid fa-star yellow"></i>
+                              <i class="fa-solid fa-star gray"></i>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="column">
+                        <div class="card">
+                          <div class="pic">
+                              <i class="fa-solid fa-image" aria-hidden="true"></i>
+                          </div>
+                          <div class="n-p">
+                              <p style="text-align: left; font-weight: bold;">Name</p>
+                              <p style="text-align: right;">$10</p>                        
+                          </div>
+                          <div class="star-rating">
+                              <i class="fa-solid fa-star yellow"></i>
+                              <i class="fa-solid fa-star yellow"></i>
+                              <i class="fa-solid fa-star yellow"></i>
+                              <i class="fa-solid fa-star yellow"></i>
+                              <i class="fa-solid fa-star gray"></i>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="column">
+                        <div class="card">
+                          <div class="pic">
+                              <i class="fa-solid fa-image" aria-hidden="true"></i>
+                          </div>
+                          <div class="n-p">
+                              <p style="text-align: left; font-weight: bold;">Name</p>
+                              <p style="text-align: right;">$10</p>                        
+                          </div>
+                          <div class="star-rating">
+                              <i class="fa-solid fa-star yellow"></i>
+                              <i class="fa-solid fa-star yellow"></i>
+                              <i class="fa-solid fa-star yellow"></i>
+                              <i class="fa-solid fa-star yellow"></i>
+                              <i class="fa-solid fa-star gray"></i>
+                          </div>
+                        </div>
+                      </div>
+                     
+                  </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <script src="counter.js"></script>
+        <script src="tab.js"></script>
+    </body>
+</html>
